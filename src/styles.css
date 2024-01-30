@@ -17,10 +17,7 @@ body {
   flex-direction: column;
   width: 500px;
 }
-.cat-description {
-}
-.cat-temperament {
-}
+
 .temperament {
   font-weight: 800;
 }

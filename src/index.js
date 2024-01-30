@@ -37,6 +37,9 @@ function getCatById(breedId) {
   showLoader();
   fetchCatByBreed(breedId)
     .then(breeds => {
+      if (!breeds.data.length) {
+        showErrorMessage();
+      }
       refs.infoEl.insertAdjacentHTML(
         'afterbegin',
         createMarkUpInfo(breeds.data)
